@@ -10,6 +10,6 @@ while (count($numerosPares) < 10) {
 }
 $cont = 1;
 foreach ($numerosPares as $numero) {
-    print_r("El ".$cont."° número es: ". $numero."\n");
+    print_r("El ".$cont."° número par es: ". $numero."\n");
     $cont++;
 }
