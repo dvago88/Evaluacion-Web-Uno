@@ -18,7 +18,7 @@ function getBiotipo($estatura)
     if ($estatura < 170) {
         return "Biotipo bajo";
     } else if ($estatura >= 170 && $estatura < 180) {
-        return"Biotipo promedio";
+        return "Biotipo promedio";
     } else {
         return "Biotipo superior";
     }
@@ -85,6 +85,6 @@ foreach ($jugadores as $jugador) {
     print_r("Jugador " . $cont . "\n");
     print_r($jugador["Nombre"] . "\n");
     print_r(calcularEdad($jugador["AnnoNacimiento"]) . "\n");
-    print_r(getBiotipo($jugador["Estatura"]). "\n");
-
+    print_r(getBiotipo($jugador["Estatura"]) . "\n");
+    $cont++;
 }
